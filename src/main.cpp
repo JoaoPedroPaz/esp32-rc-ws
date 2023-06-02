@@ -16,8 +16,8 @@
 // Definition of macros
 // ----------------------------------------------------------------------------
 
-#define LED_PIN   13
-#define BTN_PIN   14
+#define LED_PIN   26
+#define BTN_PIN   22
 #define HTTP_PORT 80
 
 // ----------------------------------------------------------------------------
@@ -97,7 +97,7 @@ struct Button {
 // Definition of global variables
 // ----------------------------------------------------------------------------
 
-Led    onboard_led = { 4, false };
+Led    onboard_led = { LED_BUILTIN, false };
 Led    led         = { LED_PIN, false };
 Button button      = { BTN_PIN, HIGH, 0, 0 };
 
